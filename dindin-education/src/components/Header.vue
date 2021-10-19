@@ -1,17 +1,17 @@
 <template>
-  <div id="nav">
-      <img class="dindin-logo" alt="DINDIN Logo" src="../assets/dindin-logo-white.png">
-      <h1 class="dindin-logo2">dindin</h1>
-      <b-navbar toggleable="md" type="dark" >
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-        <b-collapse id="nav-collapse" is-nav>
-            <b-navbar-nav>
-                <router-link class="course" to="/">CURSOS</router-link>
-                <router-link class="painel-adm" to="/about">PAINEL ADMINISTRATIVO</router-link>
-            </b-navbar-nav>
-        </b-collapse>
-    </b-navbar>
-  </div>
+    <div id="nav">
+        <img class="dindin-logo" alt="DINDIN Logo" src="../assets/dindin-logo-white.png">
+        <h1 class="dindin-logo2">dindin</h1>
+        <b-navbar toggleable="md" type="dark" >
+            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-collapse id="nav-collapse" is-nav>
+                <b-navbar-nav>
+                    <router-link class="course" to="/">CURSOS</router-link>
+                    <router-link class="painel-adm" to="/about">PAINEL ADMINISTRATIVO</router-link>
+                </b-navbar-nav>
+            </b-collapse>
+        </b-navbar>
+    </div>
 </template>
 
 <style scoped>
