@@ -9,7 +9,23 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/painel',
+    name: '/Painel',
+    component: () => import('../views/Painel.vue')
+  },
+  {
+    path: '/cursos',
+    name: 'Cursos',
+    component: () => import('../views/Cursos_Home.vue')
+  },
+  {
+    path: '/novo',
+    name:'Novo Curso',
+  component: () => import('../views/Novo_Curso.vue')
   }
+  
 ]
 
 const router = new VueRouter({
