@@ -1,4 +1,4 @@
-# dindin-education
+# dindin-project
 
 ## Project setup
 ```

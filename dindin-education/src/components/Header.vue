@@ -7,7 +7,7 @@
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
                     <router-link class="course" to="/">CURSOS</router-link>
-                    <router-link class="painel-adm" to="/painel">PAINEL ADMINISTRATIVO</router-link>
+                    <router-link class="painel-adm" to="/control">PAINEL ADMINISTRATIVO</router-link>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>

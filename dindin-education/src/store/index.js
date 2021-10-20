@@ -3,13 +3,12 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+import cursos from './modules/cursos'
+import aulas from './modules/aulas'
+
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    modules:{
+        cursos,
+        aulas
+    }
 })

@@ -10,11 +10,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
 
 #nav {
-    position: absolute;
     width: 100%;
     height: 207px;
     left: 0%;
-    bottom: 0%;
+    bottom: 0px;
 
     background: #2E948A;
 }
@@ -27,7 +26,7 @@
     width: 98.57px;
     height: 101.43px;
     left: 128px;
-    top: 53px;
+    bottom: 52.57px;
 }
 
 .dindin-logo2 {

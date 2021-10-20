@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Cursos_Home.vue'
+import Home from '../pages/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -11,19 +11,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/painel',
-    name: '/Painel',
-    component: () => import('../views/Painel.vue')
+    path: '/control',
+    name: '/Control',
+    component: () => import('../pages/Control.vue')
   },
   {
-    path: '/cursos',
-    name: 'Cursos',
-    component: () => import('../views/Cursos_Home.vue')
+    path: '/course',
+    name: 'Course',
+    component: () => import('../pages/Course.vue')
   },
   {
-    path: '/novo',
-    name:'Novo Curso',
-  component: () => import('../views/Novo_Curso.vue')
+    path: '/register',
+    name:'Register',
+  component: () => import('../pages/Register.vue')
   }
   
 ]
