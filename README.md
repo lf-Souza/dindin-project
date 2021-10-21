@@ -1,7 +1,7 @@
 # Desafio final - Projeto DINDIN (Front-end)
 Desenvolvimento de uma página web para uma escola que oferece cursos na área financeira. O projeto abrange o desenvolvimento do Front-end, Back-end e DevOps. Este repositório comporta o pojeto do Front-end com 5 pages (Registro, Home, Detalhes dos cursos, Controle e Erros) e integração de uma API para acesso ao Banco de Dados com informações sobre os cursos e aulas. 
 
-Foram utilizados o axios e vuex para consumo da API e gerenciamento do estados das variáveis do Front-end. Foram criados dois serviços e módulos para consumo da API: cursos e aulas.
+O Front-end foi desenvolvido utilizando o VUE.JS utilizando o axios e vuex para consumo da API e gerenciamento do estados das variáveis. Foram criados dois serviços e módulos para consumo da API: cursos e aulas.
 
 Os repositórios do Front-end e Back-end foram divididos para facilitar a etapa de testes. O projeto Back-end encontra-se no seguinte repositório: https://github.com/willian465/api-curso.git.
 
