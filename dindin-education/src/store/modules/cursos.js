@@ -12,7 +12,6 @@ export default {
     },
     actions: {
       getCursos(context){
-        debugger
         return serviceApi.getCursos().then(res =>{
           context.commit('SET_CURSOS',res.data.results)
         })

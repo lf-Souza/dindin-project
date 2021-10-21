@@ -1,3 +1,5 @@
+<!-- Componente: Cabeçalho das pages -->
+
 <template>
     <div id="nav">
         <img class="dindin-logo" alt="DINDIN Logo" src="../assets/dindin-logo-white.png">
