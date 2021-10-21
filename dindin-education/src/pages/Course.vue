@@ -1,6 +1,12 @@
 <template>
   <div class="cursos">
-    <h1>Cursos </h1>
+        <div
+              v-for="cursos in listDetalhesCurso"
+              :key="cursos.codigoCurso"
+              class="card--style"
+          >
+              <span class="table-name">{{ cursos.nomeCurso }}</span>
+        </div>
   </div>
 </template>
 
@@ -8,23 +14,25 @@
 import {mapActions, mapGetters} from 'vuex';
 
 export default {
+  name: 'Cursos',
   mounted(){
-    this.getCursos().then(()=>{
-      this.getAulas()
-    })
+    this.getCursoById(this.$route.params.id)
   },
   methods:{
-    ...mapActions('cursos',['getCursos']),
-    ...mapActions('aulas',['getAulas'])
+    ...mapActions('cursos',['getCursoById']),
   },
   computed:{
-    ...mapGetters('cursos',['listCursos']),
-    ...mapGetters('aulas',['listAulas'])
+    ...mapGetters('cursos',['listDetalhesCurso']),
   }
 }
 </script>
 
 <style>
 
-
+.card--style{
+  margin: 130px 0px;
+  background: #FFFFFF;
+  border: -1px solid #989898;
+  box-sizing: border-box;
+}
 </style>

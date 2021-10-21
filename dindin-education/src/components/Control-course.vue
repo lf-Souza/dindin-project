@@ -5,13 +5,13 @@
       <b-row>
           <b-card
                 v-for="cursos in listCursos"
-                :key="cursos.index"
+                :key="cursos.codigoCurso"
                 class="card--style"
             >
                 <span class="table-name">
-                    {{ cursos.name }}
+                    {{ cursos.nomeCurso }}
                 </span>
-                <b-button class="but-edit" squared @click="$router.push('/error')" >
+                <b-button class="but-edit" squared @click="abrirDetalhescurso(cursos.codigoCurso)" >
                     <span class="but-name1">editar</span>
                 </b-button>
                 <b-button class="but-delete" squared @click="$router.push('/error')">
@@ -23,11 +23,16 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
     name: 'Cursos',
     computed: {
         ...mapGetters("cursos",['listCursos'])
+    },
+    methods: {
+        abrirDetalhescurso(id) {
+            this.$router.push(`/course/${id}`);
+        },
     }
 }
 </script>
@@ -53,7 +58,7 @@ export default {
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 250px;
+    width: 400px;
     height: 21px;
     left: 24px;
     top: 12px;

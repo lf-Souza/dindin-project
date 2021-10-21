@@ -3,13 +3,17 @@ import api from './api'
 export default{
 
     getCursos(){
-        debugger
-        return api.get('/character').then(res => {
-            debugger
+        return api.get('/cursos').then(res => {
             return res
         }).catch(error => {
-            debugger
             return error
+        })
+    },
+    getCursoById(id){
+        return api.get(`/cursos/${id}`).then(res=>{
+            return res
+        }).catch(error =>{
+            return error;
         })
     }
 

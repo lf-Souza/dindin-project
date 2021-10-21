@@ -16,7 +16,7 @@ const routes = [
     component: () => import('../pages/Control.vue')
   },
   {
-    path: '/course',
+    path: '/course/:id',
     name: 'Course',
     component: () => import('../pages/Course.vue')
   },
