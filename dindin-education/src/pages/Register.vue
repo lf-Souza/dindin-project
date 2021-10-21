@@ -1,5 +1,6 @@
 <template>
   <div class="novo">
+
     <form id="novo-curso-form" @submit="createCurso">  
     <h1>Novo Curso</h1>
     <div>
@@ -91,10 +92,23 @@
 </template>
 
 <script>
+
 import Baseboard from '../components/Baseboard.vue'
 export default {
   components: {Baseboard},
-  
+  name:"Register",
+  data() {
+      return{
+          nomeCurso: null,
+          caminhoCapa: null,
+          nomeProfessor: null,
+          descricaoCurso: null,
+          titulo_aula: null,
+          link: null,
+          desc_aula: null
+      }
+  },
+  methods: {
   async createCurso(e) {
     e.preventDefault();
     
@@ -102,8 +116,10 @@ export default {
       nomeCurso: this.nomeCurso,
       caminhoCapa: this.caminhoCapa,
       nomeProfessor: this.nomeProfessor,
-      descricaoCurso: this.descricaoCurso
-    }
+      descricaoCurso: this.descricaoCurso,
+      titulo_aula: this.titulo_aula,
+      link: this.link,
+      desc_aula: this.desc_aula    }
     const dataJson = JSON.stringify(data);
     
     const req = await fetch("https://dindincursos.azurewebsites.net/V1/cursos/",{
@@ -118,8 +134,11 @@ export default {
     this.caminhoCapa = "";
     this.nomeProfessor = "";
     this.descricaoCurso = "";
+    this.titulo_aula = "";
+    this.link = "";
+    this.desc_aula = "";
   }
-
+}
 }
 </script>
 
